@@ -12,7 +12,7 @@ At Daily Harvest, we want to make it as easy as possible for our customers to ge
 We have provided two files that define products and ingredients in JSON format:
 
 
-[products.json](data/products.json)
+[products.json](data/products.json) . 
 [ingredients.json](data/ingredients.json)
 
 In a language of your choice (python and javascript preferred, but any modern language that will run under OSX or Linux will be accepted), please write a program that returns all of the products (defined in `products.json`) that contain the ingredient “Organic Banana” (defined in `ingredients.json`). With your solution, please include any instructions for configuring and running your program.
