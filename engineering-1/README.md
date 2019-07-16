@@ -4,7 +4,6 @@ Thank you for your interest in Daily Harvest! As the next step in our interview 
 
 This is not intended to be a time-consuming process. We expect that most candidates will be able to complete it within an hour. Enjoy!
 
-
 # Challenge
 
 At Daily Harvest, we want to make it as easy as possible for our customers to get healthy food that they enjoy. One way to do this is to allow people to search for products that contain a favorite ingredient (apples, kale, cinnamon, etc.).
@@ -12,7 +11,35 @@ At Daily Harvest, we want to make it as easy as possible for our customers to ge
 We have provided two files that define products and ingredients in JSON format:
 
 
-[products.json](data/products.json)   
-[ingredients.json](data/ingredients.json)
+[`products.json`](data/products.json)
 
-In a language of your choice (python and javascript preferred, but any modern language that will run under OSX or Linux will be accepted), please write a program that returns all of the products (defined in `products.json`) that contain the ingredient “Organic Banana” (defined in `ingredients.json`). With your solution, please include any instructions for configuring and running your program.
+[`ingredients.json`](data/ingredients.json)
+
+In a language of your choice (Python and JavaScript preferred, but any modern language that will run under OSX or Linux will be accepted), please write a program that returns all of the products (defined in `products.json`) that contain the ingredient “Organic Banana” (defined in `ingredients.json`).
+
+With your solution, please include any instructions for configuring and running your program.
+
+# Get Started
+
+1. Clone this repo to your local machine.
+
+    `git clone git@github.com:daily-harvest/opportunities.git`
+
+2. Write your program in the `engineering-1` directory. 
+
+3. Add your instructions for config and running your program in the [#Instructions](#instructions) section below.
+
+4. Push your changes to a repo on your own GitHub account.
+
+5. Share your repo URL with us once you're done.
+
+# Notes
+
+* Do not modify the `json` files in the `data` directory.
+* Keep your code as clean and readable as possible.
+* Bonus points for organization and documentaiton.
+
+
+# Instructions
+
+_Your instructions here._
