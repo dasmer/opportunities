@@ -21,21 +21,15 @@ With your solution, please include any instructions for configuring and running 
 
 # Workflow
 
-1. Clone this repo to your local machine.
-
-    `git clone git@github.com:daily-harvest/opportunities.git`
+1. Fork this repository to your account.
 
 2. Write your program according to the [#Challenge](#challenge) instructions above in the `engineering-1` directory. 
 
 3. Add your instructions for config and running your program in the [#Instructions](#instructions) section below.
 
-4. Commit and push your changes to a repo on your own GitHub account.
+4. Commit and push your changes to your forked repository.
 
-5. Invite the following GitHub users as Collaborators to your new private repo.
-
-    `gsarjeant`  
-    `johnzanussi`  
-    `r0mille`  
+5. Share the URL to the repository with your solution with us.
 
 # Notes
 
