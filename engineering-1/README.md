@@ -19,26 +19,30 @@ In a language of your choice (Python and JavaScript preferred, but any modern la
 
 With your solution, please include any instructions for configuring and running your program.
 
-# Get Started
+# Workflow
 
 1. Clone this repo to your local machine.
 
     `git clone git@github.com:daily-harvest/opportunities.git`
 
-2. Write your program in the `engineering-1` directory. 
+2. Write your program according to the [#Challenge](#challenge) instructions above in the `engineering-1` directory. 
 
 3. Add your instructions for config and running your program in the [#Instructions](#instructions) section below.
 
-4. Push your changes to a repo on your own GitHub account.
+4. Commit and push your changes to a repo on your own GitHub account.
 
-5. Share your repo URL with us once you're done.
+5. Invite the following GitHub users as Collaborators to your new private repo.
+
+    `gsarjeant`  
+    `johnzanussi`  
+    `r0mille`  
 
 # Notes
 
 * Do not modify the `json` files in the `data` directory.
 * Keep your code as clean and readable as possible.
 * Bonus points for organization and documentaiton.
-
+* Bonus points for tests.
 
 # Instructions
 
