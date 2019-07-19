@@ -35,7 +35,7 @@ With your solution, please include any instructions for configuring and running 
 
 * Do not modify the `json` files in the `data` directory.
 * Keep your code as clean and readable as possible.
-* Bonus points for organization and documentaiton.
+* Bonus points for organization and documentation.
 * Bonus points for tests.
 
 # Instructions
