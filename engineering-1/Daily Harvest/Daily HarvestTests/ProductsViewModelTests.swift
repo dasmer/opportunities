@@ -11,9 +11,25 @@ import XCTest
 
 class ProductsViewModelTests: XCTestCase {
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        let organicBananaIngredientDictionary = 
+    func testViewModel() {
+
+        let organicBananaIngredientDictionary: Dictionary<String, AnyObject> = [
+            "id": 3 as AnyObject,
+            "name": "Organic Banana" as AnyObject,
+            "is_allergen": false as AnyObject
+        ]
+        let organicBananaIngredient = Ingredient(dictionary: organicBananaIngredientDictionary)!
+
+        var viewModel = ProductsViewModel()
+        viewModel.filteredIngredients = Set([organicBananaIngredient])
+
+        XCTAssertTrue(viewModel.filtersBarButtonItemTitle == "Ingredient Filters (1)")
+        XCTAssertTrue(viewModel.products.count == 4)
+
+        let viewModelFilteredProductNames = viewModel.products.map { $0.name }
+        XCTAssertTrue(viewModelFilteredProductNames.contains("Acai + Cherry"))
+        XCTAssertTrue(viewModelFilteredProductNames.contains("Chocolate + Blueberry"))
+        XCTAssertTrue(viewModelFilteredProductNames.contains("Cinnamon + Banana"))
+        XCTAssertTrue(viewModelFilteredProductNames.contains("Ginger + Greens"))
     }
 }

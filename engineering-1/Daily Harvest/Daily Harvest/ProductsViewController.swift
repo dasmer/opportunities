@@ -8,28 +8,73 @@
 
 import UIKit
 
-class ViewController: UITableViewController {
+class ProductsViewController: UITableViewController {
+
+    // MARK: Properties
 
     private var viewModel = ProductsViewModel() {
         didSet {
             tableView.reloadData()
+            resetFiltersBarButtonItem()
         }
     }
+
+
+    // MARK: UIViewController
 
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Products"
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Filter Ingredients", style: .plain, target: nil, action: nil)
+        resetFiltersBarButtonItem()
     }
+
+
+    // MARK: UITableViewDataSource
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.products.count
     }
 
+
+    // MARK: UITableViewDelegate
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
         cell.textLabel?.text = viewModel.products[indexPath.row].name
         return cell
+    }
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+
+
+    // MARK: Private Functions
+
+    @objc private func didSelectShowIngredientsFilter() {
+        let viewController = FilterViewController()
+        viewController.delegate = self
+        viewController.filteredIngredients = viewModel.filteredIngredients
+        present(UINavigationController(rootViewController: viewController), animated: true, completion: nil)
+    }
+
+    private func resetFiltersBarButtonItem () {
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: viewModel.filtersBarButtonItemTitle,
+                                                           style: .plain,
+                                                           target: self,
+                                                           action: #selector(didSelectShowIngredientsFilter))
+    }
+}
+
+extension ProductsViewController: FilterViewControllerDelegate {
+
+    func didCancel() {
+        dismiss(animated: true, completion: nil)
+    }
+
+    func didFinishFilteringForIngredient(ingredients: Set<Ingredient>) {
+        viewModel.filteredIngredients = ingredients
+        dismiss(animated: true, completion: nil)
     }
 }
 

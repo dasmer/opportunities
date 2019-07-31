@@ -8,11 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		2F168EB422F151CA00A7A85F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F168EB322F151CA00A7A85F /* AppDelegate.swift */; };
-		2F168EB622F151CA00A7A85F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F168EB522F151CA00A7A85F /* ViewController.swift */; };
-		2F168EB922F151CA00A7A85F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F168EB722F151CA00A7A85F /* Main.storyboard */; };
+		2F168EB622F151CA00A7A85F /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F168EB522F151CA00A7A85F /* ProductsViewController.swift */; };
 		2F168EBB22F151CB00A7A85F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F168EBA22F151CB00A7A85F /* Assets.xcassets */; };
 		2F168EBE22F151CB00A7A85F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F168EBC22F151CB00A7A85F /* LaunchScreen.storyboard */; };
-		2F168EC922F151CB00A7A85F /* Daily_HarvestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F168EC822F151CB00A7A85F /* Daily_HarvestTests.swift */; };
+		2F168EC922F151CB00A7A85F /* ProductsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F168EC822F151CB00A7A85F /* ProductsViewModelTests.swift */; };
+		2F168ED422F1543C00A7A85F /* ProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F168ED322F1543C00A7A85F /* ProductsViewModel.swift */; };
+		2F168ED622F1546900A7A85F /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F168ED522F1546900A7A85F /* Product.swift */; };
+		2F168ED822F1547100A7A85F /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F168ED722F1547100A7A85F /* Ingredient.swift */; };
+		2F168EDA22F15CBF00A7A85F /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F168ED922F15CBF00A7A85F /* FilterViewController.swift */; };
+		2F168EE522F1C32B00A7A85F /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F168EE322F1C32B00A7A85F /* products.json */; };
+		2F168EE622F1C32B00A7A85F /* ingredients.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F168EE422F1C32B00A7A85F /* ingredients.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +33,19 @@
 /* Begin PBXFileReference section */
 		2F168EB022F151CA00A7A85F /* Daily Harvest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Daily Harvest.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F168EB322F151CA00A7A85F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2F168EB522F151CA00A7A85F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2F168EB822F151CA00A7A85F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2F168EB522F151CA00A7A85F /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
 		2F168EBA22F151CB00A7A85F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F168EBD22F151CB00A7A85F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F168EBF22F151CB00A7A85F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F168EC422F151CB00A7A85F /* Daily HarvestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Daily HarvestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F168EC822F151CB00A7A85F /* Daily_HarvestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daily_HarvestTests.swift; sourceTree = "<group>"; };
+		2F168EC822F151CB00A7A85F /* ProductsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewModelTests.swift; sourceTree = "<group>"; };
 		2F168ECA22F151CB00A7A85F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F168ED322F1543C00A7A85F /* ProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewModel.swift; sourceTree = "<group>"; };
+		2F168ED522F1546900A7A85F /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		2F168ED722F1547100A7A85F /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		2F168ED922F15CBF00A7A85F /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		2F168EE322F1C32B00A7A85F /* products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = products.json; path = ../../data/products.json; sourceTree = "<group>"; };
+		2F168EE422F1C32B00A7A85F /* ingredients.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ingredients.json; path = ../../data/ingredients.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +88,13 @@
 			isa = PBXGroup;
 			children = (
 				2F168EB322F151CA00A7A85F /* AppDelegate.swift */,
-				2F168EB522F151CA00A7A85F /* ViewController.swift */,
-				2F168EB722F151CA00A7A85F /* Main.storyboard */,
+				2F168EB522F151CA00A7A85F /* ProductsViewController.swift */,
+				2F168ED322F1543C00A7A85F /* ProductsViewModel.swift */,
+				2F168ED922F15CBF00A7A85F /* FilterViewController.swift */,
+				2F168ED522F1546900A7A85F /* Product.swift */,
+				2F168ED722F1547100A7A85F /* Ingredient.swift */,
+				2F168EE422F1C32B00A7A85F /* ingredients.json */,
+				2F168EE322F1C32B00A7A85F /* products.json */,
 				2F168EBA22F151CB00A7A85F /* Assets.xcassets */,
 				2F168EBC22F151CB00A7A85F /* LaunchScreen.storyboard */,
 				2F168EBF22F151CB00A7A85F /* Info.plist */,
@@ -90,7 +105,7 @@
 		2F168EC722F151CB00A7A85F /* Daily HarvestTests */ = {
 			isa = PBXGroup;
 			children = (
-				2F168EC822F151CB00A7A85F /* Daily_HarvestTests.swift */,
+				2F168EC822F151CB00A7A85F /* ProductsViewModelTests.swift */,
 				2F168ECA22F151CB00A7A85F /* Info.plist */,
 			);
 			path = "Daily HarvestTests";
@@ -177,9 +192,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F168EE622F1C32B00A7A85F /* ingredients.json in Resources */,
+				2F168EE522F1C32B00A7A85F /* products.json in Resources */,
 				2F168EBE22F151CB00A7A85F /* LaunchScreen.storyboard in Resources */,
 				2F168EBB22F151CB00A7A85F /* Assets.xcassets in Resources */,
-				2F168EB922F151CA00A7A85F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +213,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F168EB622F151CA00A7A85F /* ViewController.swift in Sources */,
+				2F168EDA22F15CBF00A7A85F /* FilterViewController.swift in Sources */,
+				2F168ED422F1543C00A7A85F /* ProductsViewModel.swift in Sources */,
+				2F168ED622F1546900A7A85F /* Product.swift in Sources */,
+				2F168ED822F1547100A7A85F /* Ingredient.swift in Sources */,
+				2F168EB622F151CA00A7A85F /* ProductsViewController.swift in Sources */,
 				2F168EB422F151CA00A7A85F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,7 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F168EC922F151CB00A7A85F /* Daily_HarvestTests.swift in Sources */,
+				2F168EC922F151CB00A7A85F /* ProductsViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,14 +241,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2F168EB722F151CA00A7A85F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2F168EB822F151CA00A7A85F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2F168EBC22F151CB00A7A85F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
