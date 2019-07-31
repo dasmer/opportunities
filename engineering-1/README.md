@@ -23,7 +23,7 @@ With your solution, please include any instructions for configuring and running 
 
 1. Fork this repository to your account.
 
-2. Write your program according to the [#Challenge](#challenge) instructions above in the `engineering-1` directory. 
+2. Write your program according to the [#Challenge](#challenge) instructions above in the `engineering-1` directory.
 
 3. Add your instructions for config and running your program in the [#Instructions](#instructions) section below.
 
@@ -40,4 +40,10 @@ With your solution, please include any instructions for configuring and running 
 
 # Instructions
 
-_Your instructions here._
+1. See the demo video in this directory at [`Daily-Harvest_App_Screen_Recording.mov`](Daily-Harvest_App_Screen_Recording.mov)
+2. Open Xcode 10.2.1 (Most Recent Stable Version) on a Mac
+3. Type CMD+R to Run App in iOS Simulator
+4. On iPhone Simulator, click "Ingredients Filters (0)"
+5. Click "Organic Bananas"
+6. Click "Done"
+7. Go Back to Xcode, and type CMD+U to run unit tests
