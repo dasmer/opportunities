@@ -18,6 +18,7 @@
 		2F168EDA22F15CBF00A7A85F /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F168ED922F15CBF00A7A85F /* FilterViewController.swift */; };
 		2F168EE522F1C32B00A7A85F /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F168EE322F1C32B00A7A85F /* products.json */; };
 		2F168EE622F1C32B00A7A85F /* ingredients.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F168EE422F1C32B00A7A85F /* ingredients.json */; };
+		2FAD917522F1F69300425CCE /* ModelStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAD917422F1F69300425CCE /* ModelStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		2F168ED922F15CBF00A7A85F /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		2F168EE322F1C32B00A7A85F /* products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = products.json; path = ../../data/products.json; sourceTree = "<group>"; };
 		2F168EE422F1C32B00A7A85F /* ingredients.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ingredients.json; path = ../../data/ingredients.json; sourceTree = "<group>"; };
+		2FAD917422F1F69300425CCE /* ModelStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				2F168EB522F151CA00A7A85F /* ProductsViewController.swift */,
 				2F168ED322F1543C00A7A85F /* ProductsViewModel.swift */,
 				2F168ED922F15CBF00A7A85F /* FilterViewController.swift */,
+				2FAD917422F1F69300425CCE /* ModelStore.swift */,
 				2F168ED522F1546900A7A85F /* Product.swift */,
 				2F168ED722F1547100A7A85F /* Ingredient.swift */,
 				2F168EE422F1C32B00A7A85F /* ingredients.json */,
@@ -218,6 +221,7 @@
 				2F168ED622F1546900A7A85F /* Product.swift in Sources */,
 				2F168ED822F1547100A7A85F /* Ingredient.swift in Sources */,
 				2F168EB622F151CA00A7A85F /* ProductsViewController.swift in Sources */,
+				2FAD917522F1F69300425CCE /* ModelStore.swift in Sources */,
 				2F168EB422F151CA00A7A85F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

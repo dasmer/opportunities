@@ -25,8 +25,19 @@ class FilterViewController: UITableViewController {
         }
     }
 
+    private let modelStore: ModelStore
+
 
     // MARK: Functions
+
+    init(modelStore: ModelStore) {
+        self.modelStore = modelStore
+        super.init(style: .plain)
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,19 +47,19 @@ class FilterViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return AllIngredients.count
+        return modelStore.allIngredients.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        let ingredient = AllIngredients[indexPath.row]
+        let ingredient = modelStore.allIngredients[indexPath.row]
         cell.textLabel?.text = ingredient.name
         cell.accessoryType = filteredIngredients.contains(ingredient) ? .checkmark : .none
         return cell
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let ingredient = AllIngredients[indexPath.row]
+        let ingredient = modelStore.allIngredients[indexPath.row]
 
         if filteredIngredients.contains(ingredient) {
             filteredIngredients.remove(ingredient)
@@ -64,14 +75,4 @@ class FilterViewController: UITableViewController {
     @objc private func didTapDone() {
         delegate?.didFinishFilteringForIngredient(ingredients: filteredIngredients)
     }
-
 }
-
-
-private var AllIngredients: [Ingredient] = {
-    guard let path = Bundle.main.path(forResource: "ingredients", ofType: "json"),
-    let data = try? Data(contentsOf: URL(fileURLWithPath: path), options: []),
-    let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: [Dictionary<String, AnyObject>]],
-        let ingredientDictionaries = json["ingredients"] else { return [] }
-    return ingredientDictionaries.compactMap { Ingredient(dictionary: $0) }
-}()

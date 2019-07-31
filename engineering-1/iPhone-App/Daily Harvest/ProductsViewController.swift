@@ -12,19 +12,32 @@ class ProductsViewController: UITableViewController {
 
     // MARK: Properties
 
-    private var viewModel = ProductsViewModel() {
+    private var viewModel: ProductsViewModel {
         didSet {
             tableView.reloadData()
             resetFiltersBarButtonItem()
         }
     }
 
+    private let modelStore = ModelStore()
+
+
+    // MARK: Initialization
+
+    init() {
+        viewModel = ProductsViewModel(modelStore: modelStore)
+        super.init(style: .plain)
+        title = "Products"
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
     // MARK: UIViewController
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Products"
         resetFiltersBarButtonItem()
     }
 
@@ -52,7 +65,7 @@ class ProductsViewController: UITableViewController {
     // MARK: Private Functions
 
     @objc private func didSelectShowIngredientsFilter() {
-        let viewController = FilterViewController()
+        let viewController = FilterViewController(modelStore: modelStore)
         viewController.delegate = self
         viewController.filteredIngredients = viewModel.filteredIngredients
         present(UINavigationController(rootViewController: viewController), animated: true, completion: nil)
