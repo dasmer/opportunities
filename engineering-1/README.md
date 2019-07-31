@@ -41,7 +41,7 @@ With your solution, please include any instructions for configuring and running 
 # Instructions
 
 1. See the demo video in this directory at [`Daily-Harvest_App_Screen_Recording.mov`](Daily-Harvest_App_Screen_Recording.mov)
-2. Open Xcode 10.2.1 (Most Recent Stable Version) on a Mac
+2. Open "Daily Harvest.xcodeproj" in the iPhone-App directory with Xcode 10.2.1 (Most Recent Stable Version) on a Mac OS
 3. Type CMD+R to run app in iOS Simulator
 4. On iOS Simulator, click "Ingredients Filters (0)"
 5. Click "Organic Bananas"
